@@ -10,7 +10,7 @@
     jsbin.settings.gui = {};
   }
   if (jsbin.settings.gui.toppanel === undefined) {
-    jsbin.settings.gui.toppanel = true;
+    jsbin.settings.gui.toppanel = false;
     store.localStorage.setItem('settings', JSON.stringify(jsbin.settings));
   }
 
@@ -56,8 +56,8 @@
   });
   $('.toppanel-logo').click(function(event) {
     event.preventDefault();
-    goSlow(event);
-    showToppanel();
+    // goSlow(event);
+    // showToppanel();
   });
   // $document.keydown(function (event) {
   //   if (event.which === 27) {

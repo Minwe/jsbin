@@ -4,10 +4,17 @@
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', '{{#if analyticsAltId}}{{analyticsAltId}}{{else}}{{analyticsId}}{{/if}}', 'jsbin.com');
+ga('create', '{{#if analyticsAltId}}{{analyticsAltId}}{{else}}{{analyticsId}}{{/if}}', 'bin.meizi.io');
 ga('require', 'linkid', 'linkid.js');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
 {{#if user}}ga('set', 'dimension1', '{{user.id}}');{{/if}}
+
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b424d39312c46404f15e22574a531fbb";
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hm);
+})();
 </script>
 {{/if}}

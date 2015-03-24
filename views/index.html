@@ -57,14 +57,14 @@ if(top != self) {
           <div class="dropdown" id="{{#feature request "fileMenuTest"}}file{{else}}bins{{/feature}}">
             <div class="dropdownmenu">
               <a id="createnew" data-desc="Create a brand new bin" class="button group" title="Create fresh bin" href="{{root}}" data-label="new">New</a>
-              {{#feature request "private"}}
+              <!--{{#feature request "private"}}
               <a id="public" data-desc="Set this bin to public" class="visibilityToggle button group"   title="Set this bin to public" href="{{root}}" data-label="public" data-vis="public">Make bin public</a>
               <a id="private" data-desc="Set this bin to private" class="visibilityToggle button group" title="Set this bin to private" href="{{root}}" data-label="private" data-vis="private">Make bin private</a>
               {{else}}
                 {{#feature request "upgrade"}}
               <a data-desc="Set this bin to private" data-pro="true" class="button group" title="Set this bin to private" href="{{root}}/upgrade">Make bin private</a>
                 {{/feature}}
-              {{/feature}}
+              {{/feature}}-->
               {{#feature request "delete"}}
               <a class="deletebin button group" data-desc="Delete bin" title="Delete this bin" href="{{root}}/delete" data-shortcut="ctrl+shift+del">Delete</a>
               <!-- <a class="deleteallbins button group" data-desc="Delete all bin snapshots" title="Delete all bin snapshots" href="{{root}}/delete-all">Delete all snapshots</a> -->
@@ -79,13 +79,13 @@ if(top != self) {
               <a title="Save snapshot" data-desc="Save current work, and begin new revision on next change" data-shortcut="ctrl+s" class="button save group" data-label="save" href="{{root}}/save">Save snapshot</a>
               <a data-desc="Copy and create a new bin start at revision #1" id="clone" title="Create a new copy" class="button clone group" data-label="clone" href="{{root}}/clone">Clone</a>
               <hr data-desc="">
-              {{#feature request "upgrade"}}
+              <!--{{#feature request "upgrade"}}
                 {{#feature request "vanity"}}
               <a data-desc="Publish the current bin to {{vanity}}" class="publish-to-vanity button group" title="Publish the current bin to {{vanity}}" href="{{root}}/account/bookmark/vanity">Publish to vanity homepage</a>
                 {{else}}
               <a data-pro="true" data-desc="Publish the current bin to {{vanity}}" class="button group" title="Publish the current bin to {{vanity}}" href="{{root}}/upgrade">Publish to vanity homepage</a>
                 {{/feature}}
-              {{/feature}}
+              {{/feature}}-->
               <a data-desc="Export individual panels to Github's gist{{#unless user.github_token}} as an anonymous user{{/unless}}" class="export-as-gist button group" title="Create a new {{#unless user.github_token}}anonymous {{/unless}}GitHub Gist from this bin" href="#export-to-gist">Export as gist</a>
               <a data-desc="Download a complete html file for this bin" id="download" title="Save to local drive" class="button download group" href="{{root}}/download" data-label="download">Download</a>
               <a data-desc="Use content from this bin when creating new bins" class="startingpoint button group" title="Set as starting code" href="{{root}}/save" data-label="save-as-template">Save as template</a>
@@ -223,12 +223,7 @@ if(top != self) {
                   </ul>
 
                 </div>
-                {{#feature request "upgrade"}}
-                  {{#unless user.pro}}
-                  <a href="{{root}}/upgrade" class="gopro">Support JS Bin: upgrade to PRO</a>
-                  {{/unless}}
-                {{/feature}}
-              </div>
+            </div>
             </div>
             {{else}}
             <div class="menu">
@@ -375,8 +370,6 @@ if(top != self) {
           <div class="dropdown dd-right" id="help">
             <div class="dropdownmenu">
               <a data-shortcut="ctrl+shift+?" data-desc="Discover poweruser keyboard shortcuts" id="showhelp" href="#keyboardHelp">Keyboard shortcuts</a>
-              <a data-desc="Shortcut & direct access JS Bin URLs" id="showurls" href="#urls">JS Bin URLs</a>
-              <hr data-desc="">
               {{#if settings.[ui inlinehelp]}}
               <input placeholder="Search help..." class="button" id="helpsearch"><span id="result-count"></span><span id="results"></span>
               <a id="menu-all-help" data-desc="Learn about JS Bin features & tricks" target="_blank" href="http://jsbin.com/help">All help topics</a>
@@ -384,15 +377,11 @@ if(top != self) {
               <a id="menu-help-tips" data-desc="Learn about JS Bin features & tricks" target="_blank" href="http://jsbin.com/help">Help topics</a>
               {{/if}}
               <hr data-desc="">
-              {{#feature request "pro"}}
-              <a id="menu-pro-support" data-desc="Email support" href="mailto:support@jsbin.com?subject=Pro%20user%20support%20request">Pro user email support</a>
-              {{/feature}}
-              <a id="menu-feedback" data-desc="Help make JS Bin better" id="newissue" target="_blank" href="http://github.com/jsbin/jsbin/issues/new">Send feedback &amp; file bugs</a>
-              <a id="menu-fork" data-desc="Help make JS Bin better" target="_blank" href="http://github.com/jsbin/jsbin/">Fork on Github</a>
-              <a id="menu-follow-jsbin" data-desc="Find out the latest news & info" target="_blank" href="http://twitter.com/js_bin">Follow @js_bin</a>
-              {{#feature request "!pro"}}
-              <a class="" data-pro="true" id="menu-pro" data-desc="Upgrade" href="/upgrade">Support JS Bin: upgrade now</a>
-              {{/feature}}
+              <a id="menu-feedback" data-desc="Help make JS Bin better" id="newissue" target="_blank" href="https://github.com/allmobilize/amazeui/issues">Send feedback &amp; fire bugs</a>
+              <a id="menu-fork" data-desc="Help make JS Bin better" target="_blank" href="https://github.com/allmobilize/amazeui">Star on Github</a>
+              <a id="menu-follow-jsbin" data-desc="Find out the latest news & info" target="_blank" href="http://weibo.com/amazeui">Follow @amazeui</a>
+              <hr data-desc="">
+              <a href="https://github.com/jsbin/jsbin" target="_blank">:）Powered by JS Bin</a>
             </div>
           </div>
         </div>

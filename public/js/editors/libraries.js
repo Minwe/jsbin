@@ -5,8 +5,8 @@ var libraries = [
     'group': 'jQuery'
   },
   {
-    'url': '//code.jquery.com/jquery-2.1.3.min.js',
-    'label': 'jQuery 2.1.3',
+    'url': '//code.jquery.com/jquery-2.1.4.min.js',
+    'label': 'jQuery 2.1.4',
     'group': 'jQuery'
   },
   {
@@ -15,8 +15,8 @@ var libraries = [
     'group': 'jQuery'
   },
   {
-    'url': '//code.jquery.com/jquery-1.11.2.min.js',
-    'label': 'jQuery 1.11.2',
+    'url': '//code.jquery.com/jquery-1.11.3.min.js',
+    'label': 'jQuery 1.11.3',
     'group': 'jQuery'
   },
   {
@@ -26,11 +26,11 @@ var libraries = [
   },
   {
     'url': [
-      'http://cdn.amazeui.org/amazeui/2.2.1/css/amazeui.min.css',
+      'http://cdn.amazeui.org/amazeui/2.3.0/css/amazeui.min.css',
       '//code.jquery.com/jquery-2.1.3.min.js',
-      'http://cdn.amazeui.org/amazeui/2.2.1/js/amazeui.min.js'
+      'http://cdn.amazeui.org/amazeui/2.3.0/js/amazeui.min.js'
     ],
-    'label': 'Amaze UI 2.2.1',
+    'label': 'Amaze UI 2.3.0',
     'group': 'Amaze UI'
   },
   {
@@ -76,23 +76,23 @@ var libraries = [
   },*/
   {
     'url': [
-      'http://fb.me/react-0.13.1.js',
-      'http://fb.me/JSXTransformer-0.13.1.js'
+      'http://fb.me/react-0.13.2.js',
+      'http://fb.me/JSXTransformer-0.13.2.js'
     ],
-    'label': 'React 0.13.1',
+    'label': 'React 0.13.2',
     'group': 'React'
   },
   {
     'url': [
-      'http://fb.me/react-with-addons-0.13.1.js',
-      'http://fb.me/JSXTransformer-0.13.1.js'
+      'http://fb.me/react-with-addons-0.13.2.js',
+      'http://fb.me/JSXTransformer-0.13.2.js'
     ],
-    'label': 'React with Add-Ons 0.13.1',
+    'label': 'React with Add-Ons 0.13.2',
     'group': 'React'
   },
   {
-    'url': 'http://cdn.amazeui.org/bluebird/2.9.14/bluebird.min.js',
-    'label': 'Bluebird 2.9.14',
+    'url': 'http://cdn.amazeui.org/bluebird/2.9.25/bluebird.min.js',
+    'label': 'Bluebird 2.9.25',
     'group': 'Promises'
   },
   {

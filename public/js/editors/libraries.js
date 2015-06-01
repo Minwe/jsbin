@@ -26,11 +26,21 @@ var libraries = [
   },
   {
     'url': [
-      'http://cdn.amazeui.org/amazeui/2.3.0/css/amazeui.min.css',
-      '//code.jquery.com/jquery-2.1.3.min.js',
-      'http://cdn.amazeui.org/amazeui/2.3.0/js/amazeui.min.js'
+      'http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css',
+      '//code.jquery.com/jquery-2.1.4.min.js',
+      'http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js'
     ],
-    'label': 'Amaze UI 2.3.0',
+    'label': 'Amaze UI 2.4.0',
+    'group': 'Amaze UI'
+  },
+  {
+    'url': [
+      'http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css',
+      'http://fb.me/react-0.13.3.js',
+      'https://fb.me/JSXTransformer-0.13.3.js',
+      'http://cdn.amazeui.org/amazeui-react/1.0.0-beta1/amazeui.react.min.js'
+    ],
+    'label': 'Amaze UI React 1.0.0-beta1',
     'group': 'Amaze UI'
   },
   {
@@ -76,10 +86,10 @@ var libraries = [
   },*/
   {
     'url': [
-      'http://fb.me/react-0.13.2.js',
-      'http://fb.me/JSXTransformer-0.13.2.js'
+      'http://fb.me/react-0.13.3.js',
+      'http://fb.me/JSXTransformer-0.13.3.js'
     ],
-    'label': 'React 0.13.2',
+    'label': 'React 0.13.3',
     'group': 'React'
   },
   {

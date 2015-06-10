@@ -73,7 +73,7 @@
     "grunt-contrib-jshint": "~0.1.1",
     "grunt-contrib-uglify": "~0.2.2",
     "gulp": "^3.8.11",
-    "gulp-qndn": "0.0.2",
+    "gulp-qndn": "0.0.3",
     "hbs-utils": "0.0.3",
     "mocha": "~1.21.4",
     "mocha-casperjs": "~0.5.0",

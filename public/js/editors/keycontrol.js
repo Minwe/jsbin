@@ -8,6 +8,7 @@ function enableAltUse() {
     jsbin.settings.keys = {};
   }
   jsbin.settings.keys.useAlt = this.checked;
+  settings.save();
 }
 
 $('input.enablealt').attr('checked', customKeys.useAlt ? true : false).change(enableAltUse);
@@ -62,6 +63,7 @@ if (!customKeys.disabled) {
       if (event.shiftKey === false) {
         if (saveChecksum) {
           saveChecksum = false;
+          $document.trigger('snapshot');
         } else {
           // trigger an initial save
           $('a.save:first').click();

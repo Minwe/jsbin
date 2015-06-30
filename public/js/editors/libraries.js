@@ -26,16 +26,16 @@ var libraries = [
   },
   {
     'url': [
-      'http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css',
+      'http://cdn.amazeui.org/amazeui/2.4.1/css/amazeui.min.css',
       '//code.jquery.com/jquery-2.1.4.min.js',
-      'http://cdn.amazeui.org/amazeui/2.4.0/js/amazeui.min.js'
+      'http://cdn.amazeui.org/amazeui/2.4.1/js/amazeui.min.js'
     ],
-    'label': 'Amaze UI 2.4.0',
+    'label': 'Amaze UI 2.4.1',
     'group': 'Amaze UI'
   },
   {
     'url': [
-      'http://cdn.amazeui.org/amazeui/2.4.0/css/amazeui.min.css',
+      'http://cdn.amazeui.org/amazeui/2.4.1/css/amazeui.min.css',
       'http://cdn.amazeui.org/react/0.13.3/react.min.js',
       'http://cdn.amazeui.org/react/0.13.3/JSXTransformer.js',
       'http://cdn.amazeui.org/amazeui-react/1.0.0-beta1/amazeui.react.min.js'

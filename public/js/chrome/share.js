@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  /*globals $, saveChecksum, jsbin, $document, documentTitle*/
+  /*globals $, panels, saveChecksum, jsbin, $document, documentTitle*/
 
   // only continue if the new share is enabled
   if ($('#sharemenu .share-split').length === 0) {
@@ -28,6 +28,13 @@
 
   $document.on('saved', function () {
     selectedSnapshot = jsbin.state.revision;
+  });
+
+  $document.on('snapshot', function () {
+    jsbin.state.changed = false;
+    if (window.history.replaceState) {
+      window.history.replaceState(null, '', jsbin.getURL({ withRevision: true }) + '/edit?' + panels.getQuery());
+    }
   });
 
   var $sharemenu = $('#sharemenu').bind('open', function () {
@@ -76,7 +83,7 @@
   var form = $sharemenu.find('form')[0];
   var $directLinks = $sharemenu.find('.direct-links');
   var $andlive = $('#andlive');
-  var $withLiveReload = $sharemenu.find('label[for="output-view"] small');
+  var $withLiveReload = $sharemenu.find('.codecasting');
 
   // get an object representation of a form's state
   function formData(form) {
@@ -126,9 +133,11 @@
   function update() {
     var data = formData(form);
     var url = jsbin.getURL({ root: jsbin.shareRoot });
+    var OGurl = jsbin.getURL();
 
     if (data.state === 'snapshot' && jsbin.state.latest) {
       url += '/' + selectedSnapshot;
+      OGurl += '/' + selectedSnapshot;
     }
 
     var shareurl = url;
@@ -204,7 +213,7 @@
     $directLinks.html(directLinksHTML.join(''));
 
     linkselect.value = link.href = shareurl + query;
-    embed.value = ('<a class="jsbin-embed" href="' + url + '/embed' + query + '">' + documentTitle + ' on jsbin.com</a><' + 'script src="' + jsbin.static + '/js/embed.js"><' + '/script>').replace(/<>"&/g, function (m) {
+    embed.value = ('<a class="jsbin-embed" href="' + OGurl + '/embed' + query + '">' + documentTitle + ' on jsbin.com</a><' + 'script src="' + jsbin.static + '/js/embed.min.js?' + jsbin.version + '"><' + '/script>').replace(/<>"&/g, function (m) {
         return {
           '<': '&lt;',
           '>': '&gt;',

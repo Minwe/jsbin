@@ -9,7 +9,7 @@
   "name": "jsbin",
   "description": "Collaborative JavaScript Debugging App",
   "main": "./lib/app",
-  "version": "3.30.3",
+  "version": "3.35.4",
   "preferGlobal": "true",
   "homepage": "http://jsbin.com",
   "bin": "./bin/jsbin",
@@ -21,6 +21,7 @@
     "start": "(sleep 2 && open http://localhost:3000) & ./bin/jsbin",
     "test": "node_modules/mocha/bin/_mocha -t 25000 --ui bdd test/**/*.test.js",
     ":install": "build/install.js",
+    "postinstall": "grunt build",
     "preupdate": "node build/pre-update.js",
     "postupdate": "node build/post-update.js commit"
   },
@@ -56,8 +57,7 @@
     "promise": "~5.0.0",
     "replify": "~1.2.0",
     "rsvp": "~3.0.1",
-    "semver": "~2.1.0",
-    "sendy-api": "0.0.1",
+    "semver": "^5.0.3",
     "soak": "0.3.0",
     "sqlite3": "~2.2.0",
     "stripe": "~2.7.3",
@@ -65,7 +65,7 @@
     "undefsafe": "0.0.3",
     "underscore": "~1.4.4",
     "uuid": "^2.0.1",
-    "validate-vat": "~0.3.1",
+    "validate-vat": "^0.3.2",
     "validator": "^3.16.1"
   },
   "devDependencies": {
@@ -85,10 +85,8 @@
   "optionalDependencies": {
     "zmq": "~2.6.0"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://rem.mit-license.org"
-    }
-  ]
+  "engines": {
+    "node": ">=0.10.16 <0.11"
+  },
+  "license": "MIT"
 }

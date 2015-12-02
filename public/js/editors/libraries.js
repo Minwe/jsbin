@@ -26,18 +26,18 @@ var libraries = [
   },
   {
     'url': [
-      'http://cdn.amazeui.org/amazeui/2.4.1/css/amazeui.min.css',
+      'http://cdn.amazeui.org/amazeui/2.5.0/css/amazeui.min.css',
       '//code.jquery.com/jquery-2.1.4.min.js',
-      'http://cdn.amazeui.org/amazeui/2.4.1/js/amazeui.min.js'
+      'http://cdn.amazeui.org/amazeui/2.5.0/js/amazeui.min.js'
     ],
-    'label': 'Amaze UI 2.4.1',
+    'label': 'Amaze UI 2.5.0',
     'group': 'Amaze UI'
   },
   {
     'url': [
-      'http://cdn.amazeui.org/amazeui/2.4.1/css/amazeui.min.css',
-      'http://cdn.amazeui.org/react/0.13.3/react.min.js',
-      'http://cdn.amazeui.org/react/0.13.3/JSXTransformer.js',
+      'http://cdn.amazeui.org/amazeui/2.5.0/css/amazeui.min.css',
+      'http://cdn.amazeui.org/react/0.14.3/react.min.js',
+      'http://cdn.amazeui.org/react/0.14.3/react-dom.min.js',
       'http://cdn.amazeui.org/amazeui-react/1.0.0-beta1/amazeui.react.min.js'
     ],
     'label': 'Amaze UI React 1.0.0-beta1',
@@ -86,18 +86,17 @@ var libraries = [
   },*/
   {
     'url': [
-      'http://cdn.amazeui.org/react/0.13.3/react.min.js',
-      'http://cdn.amazeui.org/react/0.13.3/JSXTransformer.js'
+      'http://cdn.amazeui.org/react/0.14.3/react.min.js',
+      'http://cdn.amazeui.org/react/0.14.3/react-dom.min.js',
     ],
-    'label': 'React 0.13.3',
+    'label': 'React 0.14.3',
     'group': 'React'
   },
   {
     'url': [
-      'http://cdn.amazeui.org/react/0.13.3/react-with-addons.min.js',
-      'http://cdn.amazeui.org/react/0.13.3/JSXTransformer.js'
+      'http://cdn.amazeui.org/react/0.14.3/react-with-addons.min.js',
     ],
-    'label': 'React with Add-Ons 0.13.3',
+    'label': 'React with Add-Ons 0.14.3',
     'group': 'React'
   },
   {
